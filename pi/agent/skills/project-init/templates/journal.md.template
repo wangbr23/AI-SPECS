@@ -1,0 +1,7 @@
+# Journal
+
+Append-only. One entry per work session. Newest at the bottom. Don't edit past entries — if something's wrong now, say so in a new entry.
+
+## {{DATE}} — project created
+
+Initialized project scaffold (AGENTS.md, CLAUDE.md, CLEANCODE.md, docs/specs, docs/designs, decisions log, TODO, .pi/skills). Nothing built yet.
