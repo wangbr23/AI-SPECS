@@ -9,7 +9,7 @@ Scaffolds the files an AI coding workflow needs to keep context across sessions 
 
 ## When to run
 
-At the start of a new project, before much real code exists. If the target directory already has an `AGENTS.md`, don't overwrite it — report what's missing from this list instead and ask before filling gaps.
+At the start of a new project, before much real code exists. If the target directory already has an `AGENTS.md`, don't discard it: generate the new one from the template, then append the existing content to the end of the generated file, so nothing is lost.
 
 ## Steps
 

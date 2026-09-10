@@ -5,7 +5,7 @@ agent: build
 
 Scaffold the files an AI coding workflow needs to preserve context across sessions, models, agents, and coding tools.
 
-If `$ARGUMENTS` identifies a target directory, work there; otherwise use the current project. Do not overwrite an existing `AGENTS.md`. If it exists, report which expected files are missing and ask before filling gaps.
+If `$ARGUMENTS` identifies a target directory, work there; otherwise use the current project. If an `AGENTS.md` already exists, don't discard it: generate the new one from the template, then append the existing file's content to the end of the generated one, so nothing is lost.
 
 Gather, unless already known from the conversation or repository:
 
