@@ -1,12 +1,12 @@
 ---
-description: Draft, independently review, and finalize a grounded design document
+description: Draft, independently review, and finalize a grounded high-level design (HLD) document
 agent: build
 subtask: false
 ---
 
-# Design Review
+# High-Level Design Review
 
-Run a three-point design process for the requested feature: ground and draft the design, obtain an independent read-only review from the `design-reviewer` subagent, then weigh the feedback and revise the document.
+Run a three-point design process for the requested feature: ground and draft the design, obtain an independent read-only review from a spawned subagent, then weigh the feedback and revise the document.
 
 The feature or spec to review is: `$ARGUMENTS`
 
@@ -30,7 +30,7 @@ Choose one recommendation. Do not turn the document into an unranked survey of a
 
 ## Independent review
 
-After saving the draft, invoke the `design-reviewer` subagent with the design path and ask it to review without editing. It must check:
+After saving the draft, spawn a subagent with the `task` tool (general-purpose agent) to review the design without editing it. Use the same model as the current agent for the subagent — subagents inherit the invoking agent's model by default, so only pick a different model if the user explicitly asked for one. In the prompt, provide the design doc path plus the paths to `AGENTS.md` and `docs/decisions.md`, instruct it to read those files itself in its own context, and forbid it from editing any files — it reports findings only. It must check:
 
 1. Whether the design respects `AGENTS.md` and `docs/decisions.md`.
 2. Whether a simpler approach meets the stated goals.
