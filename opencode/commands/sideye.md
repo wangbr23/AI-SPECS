@@ -1,0 +1,1 @@
+/Users/brwang/Workplace/sideye/command/sideye.md

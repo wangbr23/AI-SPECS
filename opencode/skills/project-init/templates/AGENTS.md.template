@@ -21,6 +21,7 @@ This section is only for what's specific to *this* repo:
 - Code style:
 - Testing approach:
 - Commit message format:
+- Task completion reports: whenever a task is completed, report back how it was verified to be correct, and what the human can do themselves to further verify it is working as expected. Say plainly what was and was not verified.
 
 Subagents that run as Herdr tabs follow the `herdr-subagents` skill (opencode global skills): one tab per agent, self-contained prompts pointing at these context files, results written to files.
 
